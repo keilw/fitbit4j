@@ -235,7 +235,8 @@ public class FitbitApiClientController implements InitializingBean {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
 
-        request.setAttribute("unitSystem", UnitSystem.getUnitSystem(Locale.US));
+//        request.setAttribute("unitSystem", UnitSystem.getUnitSystem(Locale.US));
+        request.setAttribute("unitSystem", UnitSystem.METRIC);
 
         try {
             UserInfo userInfo = context.getApiClientService().getClient().getUserInfo(context.getOurUser());
@@ -733,8 +734,9 @@ public class FitbitApiClientController implements InitializingBean {
             request.setAttribute("errors", errors);
         }
 
-
-        request.setAttribute("unitSystem", UnitSystem.getUnitSystem(Locale.US));
+        
+//        request.setAttribute("unitSystem", UnitSystem.getUnitSystem(Locale.US));
+        request.setAttribute("unitSystem", UnitSystem.METRIC);
     }
 
     protected boolean isAuthorized(RequestContext context, HttpServletRequest request) {
