@@ -29,5 +29,5 @@ You should rename it to config.properties and change properties if needed.
 
 # See also #
 
-* http://wiki.fitbit.com/display/API/Fitbit-API-Java-Client
+* https://wiki.fitbit.com/display/API/API+Java+Client
 * http://wiki.fitbit.com/display/API/API-Client-Reference-App
